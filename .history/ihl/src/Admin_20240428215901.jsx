@@ -178,7 +178,7 @@ function Admin() {
      
       <div className="justify-center flex flex-col items-center">
         <h1>Details</h1>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 ">
           <p>{captain1}</p>
           <p>VS</p>
           <p>{captain2}</p>
@@ -198,7 +198,7 @@ function Admin() {
           <p>Points Team 2: </p>
           <p>{scoreTeam2}</p>
         </div>
-        <div className="flex space-x-2 pb-6">
+        <div className="flex space-x-2">
         <button onClick={() => incrementFunc(2)} className="border-2 rounded-lg">+</button>
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>

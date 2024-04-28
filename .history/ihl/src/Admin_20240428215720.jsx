@@ -103,7 +103,7 @@ function Admin() {
   },[])
 
   const handleReset = () => {
-    if (window.confirm("Do you really want to reset.")) {
+    if (window.confirm("Are you really want to reset.")) {
         deleteMatch();
         window.location.reload();
         setSubmitDisabled(false);
@@ -161,14 +161,14 @@ function Admin() {
             value={captain1}
             onChange={(e) => setCaptain1(e.target.value)}
             placeholder="Enter Captain 1 Name"
-            className="text-white pl-1"
+            className="text-white"
           />
           <input
             type="text"
             value={captain2}
             onChange={(e) => setCaptain2(e.target.value)}
             placeholder="Enter Captain 2 Name"
-            className="text-white pl-1"
+            className="text-white"
           />
           </div>
           <button onClick={() => handleSubmit()} disabled={!captain1 || !captain2 || submitDisabled} className="mt-2">Submit</button>
@@ -178,7 +178,7 @@ function Admin() {
      
       <div className="justify-center flex flex-col items-center">
         <h1>Details</h1>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 ">
           <p>{captain1}</p>
           <p>VS</p>
           <p>{captain2}</p>
@@ -198,7 +198,7 @@ function Admin() {
           <p>Points Team 2: </p>
           <p>{scoreTeam2}</p>
         </div>
-        <div className="flex space-x-2 pb-6">
+        <div className="flex space-x-2">
         <button onClick={() => incrementFunc(2)} className="border-2 rounded-lg">+</button>
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>

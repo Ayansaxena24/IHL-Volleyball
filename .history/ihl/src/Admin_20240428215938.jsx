@@ -186,7 +186,7 @@ function Admin() {
           
 
 
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 pb-4">
           <p>Points Team 1: </p>
           <p>{scoreTeam1}</p>
         </div>
@@ -198,7 +198,7 @@ function Admin() {
           <p>Points Team 2: </p>
           <p>{scoreTeam2}</p>
         </div>
-        <div className="flex space-x-2 pb-6">
+        <div className="flex space-x-2">
         <button onClick={() => incrementFunc(2)} className="border-2 rounded-lg">+</button>
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>

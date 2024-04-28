@@ -51,7 +51,7 @@ function User() {
             <p>{scoreTeam1}</p>
           </div>
         </div>
-        <div className="border-2 rounded-lg px-1 flex flex-col justify-center items-center w-[94%]">
+        <div className="border-2 rounded-lg px-1 flex flex-col justify-center items-center w-[90%]">
         <p className="font-bold text-2xl">Team 2</p>
           <div className="flex space-x-2">
             <p>Captain:</p>
