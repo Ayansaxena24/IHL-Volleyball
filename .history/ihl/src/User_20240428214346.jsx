@@ -20,7 +20,7 @@ function User() {
   
   const getCaptainName = async () => {
     try {
-        const {data} = await axios.get("https://ihl-volleyball.onrender.com/match/1");
+        const {data} = await axios.get("https://ihl-volleyball.onrender.com/match/match/1");
         console.log(data);
         setCaptain1(data?.captain1);
         setCaptain2(data?.captain2);

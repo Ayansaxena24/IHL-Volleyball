@@ -112,7 +112,7 @@ function Admin() {
 
   const deleteMatch = async () => {
     try {
-        const {data} = await axios.delete('https://ihl-volleyball.onrender.com/match/1');
+        const {data} = await axios.delete('http://localhost:3001/match/1');
         console.log({data, message: 'deleted'});
     } catch (error) {
         setSubmitDisabled(false)
