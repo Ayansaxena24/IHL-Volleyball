@@ -1,11 +1,3 @@
 {
-  "match": [
-    {
-      "id": "1",
-      "captain1": "Aman Tripathi",
-      "captain2": "Harshdeep Shrivastava",
-      "scoreTeam1": 3,
-      "scoreTeam2": 2
-    }
-  ]
+  "match": []
 }
