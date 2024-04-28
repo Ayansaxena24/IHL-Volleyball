@@ -29,7 +29,7 @@ export default function AlertDialogSlide({ open, onClose, onLogin, onPasswordCha
         <input
           type="password"
           onChange={onPasswordChange}
-          className='bg-white border-2 rounded-lg'
+          className='bg-white'
         />
       </DialogContent>
       <DialogActions>

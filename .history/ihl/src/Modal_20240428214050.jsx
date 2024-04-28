@@ -21,15 +21,15 @@ export default function AlertDialogSlide({ open, onClose, onLogin, onPasswordCha
       onClose={onClose}
       aria-describedby="alert-dialog-slide-description"
     >
-      <DialogTitle>{"Enter Password"}</DialogTitle>
+      <DialogTitle>{"Enter Admin Password"}</DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-slide-description">
-          Enter Admin Password
+          Enter Password
         </DialogContentText>
         <input
           type="password"
           onChange={onPasswordChange}
-          className='bg-white border-2 rounded-lg'
+          className='bg-white'
         />
       </DialogContent>
       <DialogActions>
