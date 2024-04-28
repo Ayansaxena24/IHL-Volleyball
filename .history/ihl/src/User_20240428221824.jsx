@@ -13,7 +13,7 @@ function User() {
   useEffect(() => {
     const interval = setInterval(() => {
       window.location.reload();
-    }, 5000);
+    }, 500);
     return () => clearInterval(interval);
   },[]);
 
