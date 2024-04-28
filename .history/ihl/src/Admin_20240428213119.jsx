@@ -135,7 +135,7 @@ function Admin() {
 
   const handleLogin = () => {
     // Check if password is correct
-    if (password === "ihlfinal") {
+    if (password === "adminpassword") {
       setIsAdmin(true);
       setOpen(false);
     } else {

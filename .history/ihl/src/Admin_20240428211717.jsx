@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { useEffect } from "react";
 import axios from "axios";
-import AlertDialogSlide from "./Modal";
+// import AlertDialogSlide from "./Modal";
 
 function Admin() {
   const [scoreTeam1, setScoreTeam1] = useState(0);
@@ -121,36 +121,9 @@ function Admin() {
     
   }
 
-  const [open, setOpen] = React.useState(true);
-  const [password, setPassword] = React.useState("");
-  const [isAdmin, setIsAdmin] = React.useState(false);
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleModalClose = () => {
-    setOpen(false);
-  };
-
-  const handleLogin = () => {
-    // Check if password is correct
-    if (password === "ihlfinal") {
-      setIsAdmin(true);
-      setOpen(false);
-    } else {
-      // Show error message or handle incorrect password
-      alert("Incorrect password");
-    }
-  };
-
-
-
   return (
     <div className="flex flex-col space-y-6 w-screen justify-between px-[8vw]">
-      {isAdmin ? (
-        <>
-        <div className="justify-center flex flex-col items-center">
+      <div className="justify-center flex flex-col items-center">
         <h1>Enter Team Details</h1>
         <div className="box">
         <h2>IET HOSTEL LEAGUE 2024</h2>
@@ -203,15 +176,10 @@ function Admin() {
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>
       </div>
-      </>
-      ) : (
-        <AlertDialogSlide
-          open={open}
-          onClose={handleModalClose}
-          onLogin={handleLogin}
-          onPasswordChange={handlePasswordChange}
-        />
-      )}
+
+      {/* <div>
+        <AlertDialogSlide />
+      </div> */}
     </div>
   );
 }

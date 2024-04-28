@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import { useEffect } from "react";
-import axios from "axios";
 
 function User() {
   const [scoreTeam1, setScoreTeam1] = useState(0);
@@ -39,11 +38,11 @@ function User() {
 
   return (
     <div className="flex flex-col space-y-6 w-screen justify-between px-[8vw]">
-      <div className="flex flex-col space-y-4">
-        <div className="border-2 rounded-lg px-1 flex flex-col justify-center items-center w-[90%]">
-          <p className="font-bold text-2xl">Team 1</p>
+      <div className="flex space-x-4">
+        <div className="border-2 rounded-lg px-1">
+          <h1>Team 1</h1>
           <div className="flex space-x-2">
-            <p>Captain:</p>
+            <p>Captain :</p>
             <p>{captain1}</p>
           </div>
           <div className="flex space-x-2">
@@ -51,10 +50,10 @@ function User() {
             <p>{scoreTeam1}</p>
           </div>
         </div>
-        <div className="border-2 rounded-lg px-1 flex flex-col justify-center items-center w-[90%]">
-        <p className="font-bold text-2xl">Team 2</p>
+        <div className="border-2 rounded-lg px-1">
+          <h1>Team 2</h1>
           <div className="flex space-x-2">
-            <p>Captain:</p>
+            <p>Captain :</p>
             <p>{captain2}</p>
           </div>
           <div className="flex space-x-2">

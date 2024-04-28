@@ -135,7 +135,7 @@ function Admin() {
 
   const handleLogin = () => {
     // Check if password is correct
-    if (password === "ihlfinal") {
+    if (password === "adminpassword") {
       setIsAdmin(true);
       setOpen(false);
     } else {
@@ -148,9 +148,7 @@ function Admin() {
 
   return (
     <div className="flex flex-col space-y-6 w-screen justify-between px-[8vw]">
-      {isAdmin ? (
-        <>
-        <div className="justify-center flex flex-col items-center">
+      <div className="justify-center flex flex-col items-center">
         <h1>Enter Team Details</h1>
         <div className="box">
         <h2>IET HOSTEL LEAGUE 2024</h2>
@@ -203,15 +201,8 @@ function Admin() {
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>
       </div>
-      </>
-      ) : (
-        <AlertDialogSlide
-          open={open}
-          onClose={handleModalClose}
-          onLogin={handleLogin}
-          onPasswordChange={handlePasswordChange}
-        />
-      )}
+
+      
     </div>
   );
 }

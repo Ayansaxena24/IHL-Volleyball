@@ -135,7 +135,7 @@ function Admin() {
 
   const handleLogin = () => {
     // Check if password is correct
-    if (password === "ihlfinal") {
+    if (password === "adminpassword") {
       setIsAdmin(true);
       setOpen(false);
     } else {
@@ -203,7 +203,6 @@ function Admin() {
           <button onClick={() => decrementFunc(2)} className="border-2 rounded-lg" disabled={scoreTeam2<=0}>-</button>
         </div>
       </div>
-      </>
       ) : (
         <AlertDialogSlide
           open={open}
