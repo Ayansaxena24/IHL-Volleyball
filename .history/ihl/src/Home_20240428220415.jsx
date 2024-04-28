@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="flex flex-col space-y-20 justify-between px-[8vw] w-[95%]">
       <div className="flex space-x-1">
-        <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300 w-[100%]">
+        <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300">
         <Link to="/admin"><p className="font-semibold text-4xl">Admin</p></Link>
         </div>
         <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300">

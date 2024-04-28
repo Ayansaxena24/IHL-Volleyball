@@ -7,13 +7,13 @@ function Home() {
  
 
   return (
-    <div className="flex flex-col space-y-20 justify-between px-[8vw] w-[95%]">
+    <div className="flex flex-col space-y-20 w-screen justify-between px-[8vw] w-">
       <div className="flex space-x-1">
-        <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300 w-[100%]">
-        <Link to="/admin"><p className="font-semibold text-4xl">Admin</p></Link>
+        <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300">
+        <Link to="/admin"><h1>Admin</h1></Link>
         </div>
         <div className="border-2 rounded-lg px-3 hover:shadow-lg hover:shadow-violet-500 ease-in-out duration-300">
-        <Link to="/user"><p className="font-semibold text-4xl">User</p></Link>
+        <Link to="/user"><h1>User</h1></Link>
         </div>
       </div> 
       <div className="box">
